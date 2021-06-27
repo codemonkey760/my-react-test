@@ -11,13 +11,13 @@ export const App = () => {
     return (
         <>
             <Header/>
-                <Card>
-                    <Switch>
-                        <Route exact path="/" component={Home}/>
-                        <Route exact path="/about" component={About}/>
-                        <Route exact path="/login" component={LogIn}/>
-                    </Switch>
-                </Card>
+            <Card>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/about" component={About}/>
+                    <Route exact path="/login" component={LogIn}/>
+                </Switch>
+            </Card>
             <Footer/>
         </>
     )
