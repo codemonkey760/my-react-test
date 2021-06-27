@@ -4,11 +4,14 @@ import './index.css';
 import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
+import SnackbarProvider from 'react-simple-snackbar'
 
 ReactDOM.render(
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>,
+    <SnackbarProvider>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </SnackbarProvider>,
     document.getElementById('root')
 );
 
