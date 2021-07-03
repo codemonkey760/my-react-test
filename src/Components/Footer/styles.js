@@ -1,10 +1,8 @@
 import styled from "@emotion/styled";
 
 const StyledFooter = styled('div')`
+  margin: 10px;
   text-align: center;
-  h3 {
-    
-  }
 `
 
 const Disclaimer = styled('div')`

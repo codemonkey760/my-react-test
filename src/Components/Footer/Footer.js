@@ -11,7 +11,6 @@ garments, pets and loved ones. Please browse responsibly.
 const Footer = () => {
     return (
         <StyledFooter>
-            <h3>My Footer</h3>
             <Disclaimer>{disclaimer}</Disclaimer>
         </StyledFooter>
     )
