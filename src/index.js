@@ -5,13 +5,18 @@ import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import SnackbarProvider from 'react-simple-snackbar'
+import {Provider} from 'react-redux'
+import createSagaMiddleware from 'redux-saga'
+import {store} from './Store'
 
 ReactDOM.render(
-    <SnackbarProvider>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    </SnackbarProvider>,
+    <Provider store={store}>
+        <SnackbarProvider>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </SnackbarProvider>
+    </Provider>,
     document.getElementById('root')
 );
 
